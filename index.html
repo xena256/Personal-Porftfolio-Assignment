@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEGGI JIREH ZENA - PORTFOLIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/style.css"/> -->
+    <style>
+        :root {
+            --primary: #0d6efd
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center
+        }
+
+        .profile-img {
+            width: 450px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid rgba(13, 110, 253, .12)
+        }
+
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .08)
+        }
+
+        .skill-bar {
+            height: 10px;
+            border-radius: 6px
+        }
+
+        footer .social a {
+            margin-right: .6rem
+        }
+
+        /* small responsive tweaks */
+        @media (max-width:576px) {
+            .hero {
+                min-height: 60vh
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px
+            }
+        }
+        .logo{
+            transition: transform 0.3s ease;
+        }
+        .logo:hover{
+            transform: scale(1.1);
+        }
+        .nav-link {
+             border-radius: 6px;
+             transition: 0.3s;
+        }
+        .nav-link:hover {
+            background-color: #0d6efd;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+    <!-- NAVBAR -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img class="logo" src="images/logo 2.png" alt="" width="150" height="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-primary" href="#contact">Hire Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO -->
+    <header class="hero bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
+                    <h1 class="display-5 fw-bold">Hello, I'm <span class="text-primary">WEGGI JIREH ZENA</span></h1>
+                    <p class="lead">I'm <strong>an aspiring Web Designer.</strong> I am passionate about learning,
+                        building
+                        and growing in the world of tech.</p>
+                    <p>This is my journey-welcome!</p>
+                    <div class="mt-4">
+                        <a href="#projects" class="btn btn-outline-primary me-2">View Projects</a>
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </div>
+
+               
+            <div class="col-md-6 order-1 order-md-2 text-center">
+                <div class="col-md-6 order-1 order-md-2 text-center">
+                    <img src="images/profile pic 1.jpg" alt="profile" class="profile-img mb-3" width="300" height="300">
+                    <p class="text-muted small">Based in Kampala, Uganda . Open to remote work</p>
+                    </div>
+                    </div>
+                    </div>
+
+            <!-- ABOUT -->
+            <section id="about" class="py-5">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <h2>About Me</h2>
+                            <p>I am a dedicated and curious developer who is still early in my tech journey. I am
+                                currently learning HTML,CSS and Bootstrap
+                                with real-world projects to sharpen my skills. I enjoy experimenting with new tools,
+                                solving problems and growing with evrery
+                                project I work on.</p>
+                            
+                            <!-- EDUCATION -->
+                             <section id="education" class="col-12 col-md-7">
+                                <div class="container my-5">
+                                <!-- <div class="card section-card h-100 p-3"> -->
+                                    <div class="card-body">
+                                         <div class="card p-3 card-hover">
+                                        <h2 class="h5">Education</h2>
+                                     <!-- University Education -->
+                                      <article class="mb-3">
+                                        <h3 class="h6 mb-0">Bachelor of Science in Accounting and Finance</h3>
+                                        <div
+                                        class="muted-small">Kyambogo University - 2020-2023</div>
+                                        <p class="mb-0 mt-2">Graduated with honors</p>
+                                      </article>
+                                      <!-- CERTIFICATES -->
+                                        <article class="mb-3">
+                                        <h3 class="h6 mb-0">Certificate in Web designing</h3>
+                                        <div
+                                        class="muted-small">Women In Technology Uganda(WITU) - 2025 October-Present</div>
+                                        <p class="mb-0 mt-2">Activites: Building websites using HTML,CSS and Bootstrap.</p>
+                                      </article>
+                                    </div>
+                                </div>
+                             </section>
+                             <!-- EXPERIENCE -->
+                              <section id="experience" class="col-12">
+                                <div class="container my-5">
+                                <!-- <div class="card section-card p-3 h-100"> -->
+                                    <!-- <div class="card-body"> -->
+                                         <div class="card p-3 card-hover">
+                                        <h2 class="h5 mb-3">Experience</h2>
+                                        <!-- 1st Experience -->
+                                         <article class="mb-3">
+                                            <h3 class="h6 mb-0">Intern(Finance Department)</h3>
+                                            <div class="muted-small">Kyambogo University-2024</div>
+                                            <p class="mt-2 mb-0">Assited in data entry through inputting financial data into spreadsheets.</p>
+                                            <p class="mt-2 mb-0">Assited in budget preparation.</p>
+                                         </article>
+                                         <!-- 2nd Experience -->
+                                          <h3 class="h6 mb-0">Web Designer Student</h3>
+                                          <div class="muted-small">WITU</div>
+                                          <p class="mt-2 mb-0">Built responsive business and portfolio websites using HTML, CSS and Bootstrap.</p>
+                                    </div>
+                                </div>
+                            </section>
+                              <!-- Downloading Resume button -->
+                            <a href="resume/Resume .pdf" class="btn btn-outline-secondary">Download Resume</a>
+                        </div>
+                    
+                        <div class="col-lg-6">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="card p-3 card-hover">
+                                        <h5 class="mb-1">HTML & CSS</h5>
+                                        <p class="small text-muted mb-0">Semantic markup & modern layouts</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card p-3 card-hover">
+                                        <h5 class="mb-1">Bootstrap</h5>
+                                        <p class="small text-muted mb-0">Responsive components & utilities</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card p-3 card-hover">
+                                        <h5 class="mb-1">Ent & Lifeskills</h5>
+                                        <p class="small text-muted mb-0">Business ideation & Communication skills</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card p-3 card-hover">
+                                        <h5 class="mb-1">Git & Deployment</h5>
+                                        <p class="small text-muted mb-0">Version control & hosting</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PROJECTS -->
+            <section id="projects" class="py-5 bg-white">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="mb-0">Selected Projects</h2>
+                        <a href="#" class="small">View projects →</a>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Project Card 1 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 card-hover">
+                                <!-- <img src="assets/project-1.png" class="card-img-top" alt="Project 1"> -->
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Project One</h5>
+                                    <p class="card-text small text-muted">Designed a business website with HTML and CSS</p>
+                                      
+                                    <div class="mt-auto d-flex justify-content-between align-items-center">
+                                        <a href="#" class="btn btn-sm btn-outline-primary">Live</a>
+                                        <a href="#" class="btn btn-sm btn-primary">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project card 2 -->
+                         <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 card-hover">
+                                <!-- <img src="assets/project-1.png" class="card-img-top" alt="Project 1"> -->
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Project Two</h5>
+                                    <p class="card-text small text-muted">Designed a personal portfolio website with HTML, CSS,
+                                        and
+                                        Bootstrap.</p>
+                                    <div class="mt-auto d-flex justify-content-between align-items-center">
+                                        <a href="#" class="btn btn-sm btn-outline-primary">Live</a>
+                                        <a href="#" class="btn btn-sm btn-primary">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project card 3 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 card-hover">
+                                <!-- <img src="assets/project-1.png" class="card-img-top" alt="Project 1"> -->
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Project Three</h5>
+                                    <p class="card-text small text-muted">Assited in designing a landing page for a product.</p>
+                                        
+                                    <div class="mt-auto d-flex justify-content-between align-items-center">
+                                        <a href="#" class="btn btn-sm btn-outline-primary">Live</a>
+                                        <a href="#" class="btn btn-sm btn-primary">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+
+                   
+            <!-- SKILLS -->
+            <section id="skills" class="py-5 bg-light">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <div class="row g-3 mt-3">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between"><span>HTML & CSS</span><strong>80%</strong>
+                                </div>
+                                <div class="progress skill-bar">
+                                    <div class="progress-bar" role="progressbar" style="width:90%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between"><span>Bootstrap</span><strong>75%</strong>
+                                </div>
+                                <div class="progress skill-bar">
+                                    <div class="progress-bar" role="progressbar" style="width:88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between"><span>Financial Analysis and 
+                                       Reporting </span><strong>70%</strong></div>
+                                <div class="progress skill-bar">
+                                    <div class="progress-bar" role="progressbar" style="width:75%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between"><span>Git &
+                                        Deployment</span><strong>50%</strong>
+                                </div>
+                                <div class="progress skill-bar">
+                                    <div class="progress-bar" role="progressbar" style="width:70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CONTACT -->
+            <section id="contact" class="py-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <h2>Contact</h2>
+                            <p class="text-muted">Want to work together? Send me a message.</p>
+                            <form id="contactForm" novalidate>
+                                <div class="mb-3">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" required>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="5" required></textarea>
+                                    <div class="invalid-feedback">Please write a message.</div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- <div class="card p-4"> -->
+                                 <div class="card p-3 card-hover">
+                                <h5>Get in touch</h5>
+                                <p class="mb-1">Email: <a href="mailto:you@example.com">weggijirehzena@gmail.com</a></p>
+                                <p class="mb-1">Phone: +256 771501450</p>
+                                <p class="mb-0">Location: Kampala, Uganda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FOOTER -->
+            <footer class="py-4 bg-dark text-white">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div>&copy; <span id="year"></span> WEGGI JIREH ZENA</div>
+                    <div class="social">
+                        <a href="#" class="text-white small">GitHub</a>
+                        <a href="#" class="text-white small">LinkedIn</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- Bootstrap JS (bundle includes Popper) -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+            <script>
+                // Set copyright year
+                document.getElementById('year').textContent = new Date().getFullYear();
+
+                // Simple bootstrap form validation
+                (function () {
+                    'use strict'
+                    const form = document.getElementById('contactForm')
+                    form.addEventListener('submit', function (e) {
+                        if (!form.checkValidity()) {
+                            e.preventDefault(); e.stopPropagation();
+                        } else {
+                            e.preventDefault();
+                            // TODO: replace with real submission logic (e.g., Netlify forms, EmailJS, server)
+                            alert('Thanks! Your message was (pretend) sent.');
+                            form.reset();
+                        }
+                        form.classList.add('was-validated')
+                    })
+                })();
+
+                // Smooth scroll for links
+                document.querySelectorAll('a[href^="#"]').forEach(a => {
+                    a.addEventListener('click', function (e) {
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+                    })
+                })
+            </script>
+
+</body>
+
+</html>
